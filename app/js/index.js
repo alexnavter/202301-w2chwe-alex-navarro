@@ -1,3 +1,5 @@
 import generateBoard from "./generateBoard/generateBoard.js";
+import countAliveNeighbors from "./countAliveNeighbors/countAliveNeighbors.js";
 
-console.table(generateBoard());
+generateBoard();
+countAliveNeighbors();
