@@ -1,13 +1,11 @@
 const generateBoard = (rows, columns) => {
   const board = [];
-  const row = [];
-  const column = [];
 
   for (let i = 0; i < rows; i++) {
-    board[i] = row;
+    board[i] = [];
 
     for (let j = 0; j < columns; j++) {
-      board[i][j] = column;
+      board[i][j] = Math.round(Math.random());
     }
   }
 

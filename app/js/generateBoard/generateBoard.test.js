@@ -6,17 +6,10 @@ describe("Given a function generateBoard", () => {
       const rows = 5;
       const columns = 5;
 
-      const expectedResult = [
-        [[], [], [], [], []],
-        [[], [], [], [], []],
-        [[], [], [], [], []],
-        [[], [], [], [], []],
-        [[], [], [], [], []],
-      ];
-
       const board = generateBoard(rows, columns);
 
-      expect(board).toStrictEqual(expectedResult);
+      expect(board.length).toBe(rows);
+      expect(board[0].length).toBe(columns);
     });
   });
 });
