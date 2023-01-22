@@ -1,9 +1,7 @@
-let generateBoard = (rows, columns) => {
+const generateBoard = (rows, columns) => {
   const board = [];
   const row = [];
   const column = [];
-
-  //new Array(rows);
 
   for (let i = 0; i < rows; i++) {
     board[i] = row;
@@ -15,7 +13,5 @@ let generateBoard = (rows, columns) => {
 
   return board;
 };
-
-console.log(generateBoard(5, 5));
 
 export default generateBoard;
